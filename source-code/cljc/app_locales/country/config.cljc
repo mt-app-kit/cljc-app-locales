@@ -15,7 +15,7 @@
      ["Andorra" "België" "Bosna i Hercegovina" "Danmark" "Deutschland" "Eesti" "España" "France" "Føroyar" "Gibraltar" "Guernsey" "Hrvatska" "Isle of Man" "Italia" "Jersey" "Latvija" "Liechtenstein" "Lietuva" "Luxembourg" "Magyarország" "Malta" "Moldova" "Monaco" "Nederland" "Norge" "Polska" "Portugal" "Republika e Kosovës" "România" "San Marino" "Schweiz" "Shqipëria" "Slovenija" "Slovensko" "Suomi" "Svalbard og Jan Mayen" "Sverige" "United Kingdom" "Vaticano" "Åland" "Éire" "Ísland" "Österreich" "Česká republika" "Ελλάδα" "Κύπρος" "Белару́сь" "България" "Россия" "Северна Македонија" "Србија" "Україна" "Црна Гора"])
 
 ; @constant (map)
-; {:my-country (map)}
+; {:country-code (map)}
 (def COUNTRY-LIST
      {:ad
       {:capital "Andorra la Vella"

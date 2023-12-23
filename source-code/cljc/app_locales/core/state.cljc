@@ -8,7 +8,7 @@
 ; @atom (map)
 ;
 ; @usage
-; @SELECTED-LOCALE
+; (deref SELECTED-LOCALE)
 ; =>
 ; :us
 (def SELECTED-LOCALE #?(:clj  (atom  :us)

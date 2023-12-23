@@ -32,7 +32,7 @@
   ; @param (keyword)(opt) country-code
   ; Default: @SELECTED-LOCALE
   ;
-  ; @example
+  ; @usage
   ; (country-currencies :hu)
   ; =>
   ; ["HUF"]
@@ -46,12 +46,12 @@
 
 (defn country-currency
   ; @description
-  ; Returns the first official currency of the given country.
+  ; Returns the primary official currency of the given country.
   ;
   ; @param (keyword)(opt) country-code
   ; Default: @SELECTED-LOCALE
   ;
-  ; @example
+  ; @usage
   ; (country-currency :hu)
   ; =>
   ; "HUF"
@@ -71,7 +71,7 @@
   ; @param (keyword)(opt) country-code
   ; Default: @SELECTED-LOCALE
   ;
-  ; @example
+  ; @usage
   ; (country-languages :hu)
   ; =>
   ; ["hu"]
@@ -85,12 +85,12 @@
 
 (defn country-language
   ; @description
-  ; Returns the first official language of the given country.
+  ; Returns the primary official language of the given country.
   ;
   ; @param (keyword)(opt) country-code
   ; Default: @SELECTED-LOCALE
   ;
-  ; @example
+  ; @usage
   ; (country-language :hu)
   ; =>
   ; "hu"
@@ -110,7 +110,7 @@
   ; @param (keyword)(opt) country-code
   ; Default: @SELECTED-LOCALE
   ;
-  ; @example
+  ; @usage
   ; (country-name :hu)
   ; =>
   ; "Hungary"
@@ -129,7 +129,7 @@
   ; @param (keyword)(opt) country-code
   ; Default: @SELECTED-LOCALE
   ;
-  ; @example
+  ; @usage
   ; (country-native-name :hu)
   ; =>
   ; "Magyarország"

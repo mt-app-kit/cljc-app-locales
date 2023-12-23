@@ -6,6 +6,7 @@
               [app-locales.currency.config :as currency.config]
               [app-locales.name.config :as name.config]
               [app-locales.name.utils :as name.utils]
+              [app-locales.name.views :as name.views]
               [app-locales.core.state :as core.state]
               [app-locales.core.side-effects :as core.side-effects]))
 
@@ -43,5 +44,9 @@
 (def REVERSED-NAME-ORDER-COUNTRIES name.config/REVERSED-NAME-ORDER-COUNTRIES)
 
 ; @redirect (app-locales.name.utils/*)
-(def format-name   name.utils/format-name)
-(def name-initials name.utils/name-initials)
+(def country-name-order name.utils/country-name-order)
+(def format-name        name.utils/format-name)
+(def name-initials      name.utils/name-initials)
+
+; @redirect (app-locales.name.views/*)
+(def in-name-order name.views/in-name-order)
