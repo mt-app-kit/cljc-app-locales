@@ -1,6 +1,7 @@
 
 (ns app-locales.name.views
-    (:require [app-locales.core.state :as core.state]))
+    (:require [app-locales.core.state :as core.state]
+              [app-locales.name.utils :as name.utils]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
