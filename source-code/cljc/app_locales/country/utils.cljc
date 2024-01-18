@@ -1,7 +1,7 @@
 
 (ns app-locales.country.utils
-    (:require [app-locales.country.config :as country.config]
-              [app-locales.core.state :as core.state]))
+    (:require [app-locales.core.state     :as core.state]
+              [app-locales.country.config :as country.config]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

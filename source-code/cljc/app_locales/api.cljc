@@ -1,14 +1,14 @@
 
 (ns app-locales.api
-    (:require [app-locales.address.utils :as address.utils]
-              [app-locales.country.config :as country.config]
-              [app-locales.country.utils :as country.utils]
-              [app-locales.currency.config :as currency.config]
-              [app-locales.name.config :as name.config]
-              [app-locales.name.utils :as name.utils]
-              [app-locales.name.views :as name.views]
-              [app-locales.core.state :as core.state]
-              [app-locales.core.side-effects :as core.side-effects]))
+    (:require [app-locales.address.utils     :as address.utils]
+              [app-locales.core.side-effects :as core.side-effects]
+              [app-locales.core.state        :as core.state]
+              [app-locales.country.config    :as country.config]
+              [app-locales.country.utils     :as country.utils]
+              [app-locales.currency.config   :as currency.config]
+              [app-locales.name.config       :as name.config]
+              [app-locales.name.utils        :as name.utils]
+              [app-locales.name.views        :as name.views]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

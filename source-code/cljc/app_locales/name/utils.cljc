@@ -1,8 +1,8 @@
 
 (ns app-locales.name.utils
-    (:require [fruits.vector.api :as vector]
+    (:require [app-locales.core.state  :as core.state]
               [app-locales.name.config :as name.config]
-              [app-locales.core.state :as core.state]))
+              [fruits.vector.api       :as vector]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
