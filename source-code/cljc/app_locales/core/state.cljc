@@ -1,6 +1,6 @@
 
 (ns app-locales.core.state
-    #?(:cljs (:require [reagent.api :refer [ratom]])))
+    #?(:cljs (:require [reagent.core :as reagent])))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -15,5 +15,5 @@
 ; (deref DEFAULT-COUNTRY-CODE)
 ; =>
 ; :us
-(def DEFAULT-COUNTRY-CODE #?(:clj  (atom  :us)
-                             :cljs (ratom :us)))
+(def DEFAULT-COUNTRY-CODE #?(:clj  (atom         :us)
+                             :cljs (reagent/atom :us)))
