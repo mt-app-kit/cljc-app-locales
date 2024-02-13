@@ -17,10 +17,10 @@
 (def format-address address.utils/format-address)
 
 ; @redirect (app-locales.core.state/*)
-(def SELECTED-LOCALE core.state/SELECTED-LOCALE)
+(def DEFAULT-COUNTRY-CODE core.state/DEFAULT-COUNTRY-CODE)
 
 ; @redirect (app-locales.core.side-effects/*)
-(def select-locale! core.side-effects/select-locale!)
+(def set-default-country-code! core.side-effects/set-default-country-code!)
 
 ; @redirect (app-locales.country.config/*)
 (def COUNTRY-NAMES    country.config/COUNTRY-NAMES)

@@ -5,13 +5,13 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-(defn select-locale!
+(defn set-default-country-code!
   ; @description
-  ; Sets the selected locale.
+  ; Sets the default country code.
   ;
   ; @param (keyword) country-code
   ;
   ; @usage
-  ; (select-locale! :us)
+  ; (set-default-country-code! :us)
   [country-code]
-  (reset! core.state/SELECTED-LOCALE country-code))
+  (reset! core.state/DEFAULT-COUNTRY-CODE country-code))

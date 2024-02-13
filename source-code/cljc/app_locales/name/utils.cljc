@@ -9,7 +9,7 @@
 
 (defn country-name-order
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (country-name-order :us)
@@ -24,7 +24,7 @@
   ; @return (keyword)
   ; :normal, :reversed
   ([]
-   (country-name-order @core.state/SELECTED-LOCALE))
+   (country-name-order @core.state/DEFAULT-COUNTRY-CODE))
 
   ([country-code]
    (if (vector/contains-item? name.config/REVERSED-NAME-ORDER-COUNTRIES country-code)
@@ -35,7 +35,7 @@
   ; @param (string) first-name
   ; @param (string) last-name
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (format-name "John" "Doe" :us)
@@ -49,7 +49,7 @@
   ;
   ; @return (string)
   ([first-name last-name]
-   (format-name first-name last-name @core.state/SELECTED-LOCALE))
+   (format-name first-name last-name @core.state/DEFAULT-COUNTRY-CODE))
 
   ([first-name last-name country-code]
    (case (country-name-order country-code)
@@ -60,7 +60,7 @@
   ; @param (string) first-name
   ; @param (string) last-name
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (name-initials "John" "Doe" :us)
@@ -74,7 +74,7 @@
   ;
   ; @return (string)
   ([first-name last-name]
-   (name-initials first-name last-name @core.state/SELECTED-LOCALE))
+   (name-initials first-name last-name @core.state/DEFAULT-COUNTRY-CODE))
 
   ([first-name last-name country-code]
    (case (country-name-order country-code)

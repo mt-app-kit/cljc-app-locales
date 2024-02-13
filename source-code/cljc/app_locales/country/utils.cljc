@@ -11,7 +11,7 @@
   ; Returns the name of the capital city of the given country.
   ;
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (country-capital-name :hu)
@@ -20,7 +20,7 @@
   ;
   ; @return (string)
   ([]
-   (country-capital-city @core.state/SELECTED-LOCALE))
+   (country-capital-city @core.state/DEFAULT-COUNTRY-CODE))
 
   ([country-code]
    (get-in country.config/COUNTRY-LIST [country-code :capital])))
@@ -30,7 +30,7 @@
   ; Returns the official currencies of the given country.
   ;
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (country-currencies :hu)
@@ -39,7 +39,7 @@
   ;
   ; @return (strings in vector)
   ([]
-   (country-currencies @core.state/SELECTED-LOCALE))
+   (country-currencies @core.state/DEFAULT-COUNTRY-CODE))
 
   ([country-code]
    (get-in country.config/COUNTRY-LIST [country-code :currency])))
@@ -49,7 +49,7 @@
   ; Returns the primary official currency of the given country.
   ;
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (country-currency :hu)
@@ -58,7 +58,7 @@
   ;
   ; @return (string)
   ([]
-   (country-currency @core.state/SELECTED-LOCALE))
+   (country-currency @core.state/DEFAULT-COUNTRY-CODE))
 
   ([country-code]
    (let [country-currencies (country-currencies country-code)]
@@ -69,7 +69,7 @@
   ; Returns the official languages of the given country.
   ;
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (country-languages :hu)
@@ -78,7 +78,7 @@
   ;
   ; @return (vector)
   ([]
-   (country-languages @core.state/SELECTED-LOCALE))
+   (country-languages @core.state/DEFAULT-COUNTRY-CODE))
 
   ([country-code]
    (get-in country.config/COUNTRY-LIST [country-code :languages])))
@@ -88,7 +88,7 @@
   ; Returns the primary official language of the given country.
   ;
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (country-language :hu)
@@ -97,7 +97,7 @@
   ;
   ; @return (string)
   ([]
-   (country-language @core.state/SELECTED-LOCALE))
+   (country-language @core.state/DEFAULT-COUNTRY-CODE))
 
   ([country-code]
    (let [country-languages (country-languages country-code)]
@@ -108,7 +108,7 @@
   ; Returns the official name of the given country.
   ;
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (country-name :hu)
@@ -117,7 +117,7 @@
   ;
   ; @return (string)
   ([]
-   (country-name @core.state/SELECTED-LOCALE))
+   (country-name @core.state/DEFAULT-COUNTRY-CODE))
 
   ([country-code]
    (get-in country.config/COUNTRY-LIST [country-code :name])))
@@ -127,7 +127,7 @@
   ; Returns the native name of the given country.
   ;
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (country-native-name :hu)
@@ -136,7 +136,7 @@
   ;
   ; @return (string)
   ([]
-   (country-native-name @core.state/SELECTED-LOCALE))
+   (country-native-name @core.state/DEFAULT-COUNTRY-CODE))
 
   ([country-code]
    (get-in country.config/COUNTRY-LIST [country-code :native])))

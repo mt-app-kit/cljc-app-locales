@@ -5,11 +5,15 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
+; @description
+; Default value of the contry code parameter in locale functions.
+;
 ; @atom (map)
+; Default: :us
 ;
 ; @usage
-; (deref SELECTED-LOCALE)
+; (deref DEFAULT-COUNTRY-CODE)
 ; =>
 ; :us
-(def SELECTED-LOCALE #?(:clj  (atom  :us)
-                        :cljs (ratom :us)))
+(def DEFAULT-COUNTRY-CODE #?(:clj  (atom  :us)
+                             :cljs (ratom :us)))

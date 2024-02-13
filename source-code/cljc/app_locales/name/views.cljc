@@ -10,7 +10,7 @@
   ; @param (hiccup or string) first-name
   ; @param (hiccup or string) last-name
   ; @param (keyword)(opt) country-code
-  ; Default: @SELECTED-LOCALE
+  ; Default: @DEFAULT-COUNTRY-CODE
   ;
   ; @usage
   ; (in-name-order [:input {:type :text :placeholder "First name"}]
@@ -22,7 +22,7 @@
   ;
   ; @return (hiccup)
   ([first-name last-name]
-   (in-name-order first-name last-name @core.state/SELECTED-LOCALE))
+   (in-name-order first-name last-name @core.state/DEFAULT-COUNTRY-CODE))
 
   ([first-name last-name country-code]
    (case (name.utils/country-name-order country-code)
